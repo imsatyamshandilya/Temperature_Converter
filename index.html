@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Temperture Converter</title>
+</head>
+
+<body>
+    <div class="main">
+        <!--1 st div-->
+        <div class="div1"><i class="fa-solid fa-temperature-high" style="color: #e6ebf4;"></i>
+            TEMPERATURE CONVERTER
+        </div>
+
+        <!--2 nd div-->
+        <div class="div2">
+            <h3>Temperature</h3>
+            <h3>Degree</h3>
+        </div>
+
+        <!--3 rd div-->
+        <div class="div3">
+
+            <!--form div -->
+            <div class="form">
+                <div class="subform">
+                    <form>
+                        <div id="fromdiv">
+                            <label for="from" id="label1"> From:</label>
+                            <select id="from">
+                                <option selected>CELCIUS</option>
+                                <option>FAHARENHEIT</option>
+                                <option>KELVIN</option>
+                            </select>
+                        </div>
+                        <div id="todiv">
+                            <label for="To" id="label2">To:</label>
+                            <select id="To">
+                                <option>CELCIUS</option>
+                                <option selected>FAHARENHEIT</option>
+                                <option>KELVIN</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+
+                <!--answer div-->
+
+                <div class="textfields">
+                    <div id="text1">
+                        <input type="number" id="tempcel" placeholder="Input">
+                    </div>
+                    <div id="text2">
+                        <input type="text" id="tempfar" placeholder="Output">
+                    </div>
+                </div>
+            </div> <!--3rd div-->
+        </div>
+
+        <!--4th div -->
+        <div class="btndiv">
+            <button class="btn" style="margin-left: 80px;" onclick="reset()">Reset</button>
+            <button class="btn" onclick="convert()">Convert</button>
+        </div>
+
+        <!-- 5th div -->
+        <div class="div5">
+            <h1 id="message"></h1>
+        </div>
+    </div>
+    <div>
+    </div>
+</body>
+
+</html>
